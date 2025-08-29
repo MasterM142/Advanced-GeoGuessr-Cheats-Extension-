@@ -1,4 +1,4 @@
-# Perfect Overlay Solution for GeoGuessr 🎯
+# Perfect Overlay Solution for GeoGuessr 
 
 This project provides a **stealthy and highly effective overlay system** for enhancing your GeoGuessr experience.
 
