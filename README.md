@@ -1,0 +1,1 @@
+# Advanced-GeoGuessr-Cheats-Extension-
