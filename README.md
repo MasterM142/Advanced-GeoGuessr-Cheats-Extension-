@@ -1,49 +1,73 @@
-# Perfect Overlay Solution for GeoGuessr 
+# Advanced GeoGuessr Cheats Extension
 
-This project provides a **stealthy and highly effective overlay system** for enhancing your GeoGuessr experience.
+This is a userscript designed to enhance the GeoGuessr experience by providing real-time location assistance.  It displays an embedded map with the correct location and adds an optional overlay marker to the in-game map.
 
-> ⚠️ **Note:** The source code is written in **German**, but it is clean, well-structured, and fully customizable. You can easily adapt it to your needs.
+## Features and Functionality
 
----
+*   **Real-time Coordinate Extraction:** Intercepts Google Street View API calls to determine the precise coordinates of the current location.
+*   **Embedded Map:** Displays a draggable and resizable map showing the exact location. Uses OpenStreetMap for the map display.
+*   **Overlay Marker:** Places a visual marker on the GeoGuessr map, indicating the extracted coordinates.
+*   **Keyboard Shortcuts:**
+    *   `1`: Toggle the embedded map visibility.
+    *   `2`: Create the overlay marker.
+    *   `3`: Remove the overlay marker.
+    *   `4`: Open the location in Google Maps in a new tab.
+    *   `5`: Copy the coordinates to the clipboard.
+*   **Status Updates:** Provides informative messages via an on-screen status display, indicating the script's activity and potential issues.
+*   **Cheat Detection Mitigation:** Attempts to remove potential cheat detection scripts from the page.
+*   **Automatic Map Updates:** Periodically updates the overlay marker's position to keep it aligned with the in-game map, even when the user zooms or pans.
+*   **Draggable Embedded Map:**  Allows the user to reposition the embedded map anywhere on the screen.
 
-## Key Bindings
+## Technology Stack
 
-- **Key 1**: Toggle embedded reference map  
-- **Key 2**: Show visual overlay marker on GeoGuessr map  
-- **Key 3**: Hide overlay marker  
-- **Key 4**: Open current location in Google Maps  
-- **Key 5**: Copy coordinates  
+*   **JavaScript:** Core logic of the userscript.
+*   **Tampermonkey/Greasemonkey:**  Userscript manager required to run the script.
+*   **OpenStreetMap:** Used for displaying the embedded map.
+*   **Google Maps API (Interception):** The script intercepts calls to Google's internal Maps API to extract location data.
 
----
+## Prerequisites
 
-## 🔍 How It Works
+*   A browser with a userscript manager installed (e.g., Tampermonkey for Chrome, Greasemonkey for Firefox).
+*   An active internet connection.
+*   A GeoGuessr account (for playing the game).
 
-- A **red overlay pin** is visually placed on the GeoGuessr map — it’s **not part of the actual game**
-- The game has **no awareness** of the marker — it's just a **CSS element**
-- You **click manually** on the map, using the overlay as a visual guide
-- In replays, **only your normal click** is visible — completely discreet
-- The marker **moves automatically** with the map as you pan or zoom
+## Installation Instructions
 
----
+1.  Install a userscript manager for your browser:
+    *   **Chrome:** [Tampermonkey](https://www.tampermonkey.net/)
+    *   **Firefox:** [Greasemonkey](https://www.greasespot.net/)
+2.  Click on the following link to install the script directly from Greasy Fork: [Geoguessr Location Resolver (Overlay Only)](https://update.greasyfork.org/scripts/450253/Geoguessr%20Location%20Resolver%20%28Works%20in%20all%20modes%29.user.js)
+3.  The userscript manager will prompt you to confirm the installation.  Click "Install".
+4.  Open or refresh the GeoGuessr website ([https://www.geoguessr.com/\*](https://www.geoguessr.com/*)).
 
-## ✅ Features
+## Usage Guide
 
-- Pulsating red pin shows your **exact intended location**
-- **Stays perfectly aligned** when moving the map
-- **Completely invisible** to the game — no cheats, no injections
-- You still **click normally**, so it looks 100% legit
-- This is the **safest way** to improve your accuracy — see clearly where to click, without the game ever knowing 
+1.  Start a game on GeoGuessr.
+2.  The script will automatically attempt to extract coordinates from the Google Street View API calls.
+3.  An embedded map will appear in the top-left corner of the screen.  If it doesn't appear automatically, wait a few seconds.
+4.  Use the keyboard shortcuts (1-5) to toggle the embedded map, create/remove the overlay marker, open the location in Google Maps, or copy the coordinates.
+5.  The embedded map is draggable by its header; click and drag to reposition. You can also resize it using the "↔" button in the header.
+6.  The status display at the top of the embedded map provides information on the script's activity.
 
----
+## API Documentation
 
-## 🔧 Customization
+This script does not expose an external API. It functions by intercepting and analyzing internal API calls made by the GeoGuessr website.
 
-While the codebase is written in **German**, variable and function names are intuitive, and comments can easily be translated.  
-Feel free to fork the repository and adapt it to your own playstyle or workflow.
+## Contributing Guidelines
 
----
+Contributions are welcome!  To contribute:
 
-## Disclaimer
+1.  Fork the repository.
+2.  Create a new branch for your feature or bug fix.
+3.  Make your changes and commit them with clear, descriptive messages.
+4.  Submit a pull request.
 
-This tool is meant for personal use to enhance learning and precision in GeoGuessr.  
-Use it responsibly and respect the game’s terms of service.
+Please ensure your code adheres to the existing style and conventions.
+
+## License Information
+
+No license information was provided.  All rights are reserved by the author.
+
+## Contact/Support Information
+
+For issues, questions, or suggestions, please open an issue on the GitHub repository: [https://github.com/MasterM142/Advanced-GeoGuessr-Cheats-Extension-/issues](https://github.com/MasterM142/Advanced-GeoGuessr-Cheats-Extension-/issues)
